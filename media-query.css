@@ -1,0 +1,149 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+@media screen and (min-width: 800px){
+
+/* Paleta de cores
+
+#1C232B - azul marinho
+#3C8067 - verde
+#6C7289 - azul arroxeado
+#F2EBE3 - cream
+#FFFFFF - branco 
+
+*/
+
+/* Desktop */
+
+
+:root {
+    --cor1: #1C232B;
+    --cor2: #3C8067;
+    --cor3: #6C7289;
+    --cor4: #F2EBE3;
+    --cor5: #FFFFFF;
+
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Fraunces', sans-serif;
+
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+
+section#config-geral-pagina {
+    position: absolute;
+    width: 620px;
+    height: 453px;
+    background-color: var(--cor5);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden; /* tudo que estiver fora da borda é escondido */
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
+}
+
+section > div#imagem {
+    display: block;
+    background: url(imagens/image-product-desktop.jpg) no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+section > div.conteudo {
+    float: right;
+    margin-right: 20px;
+}
+
+section > div.conteudo > div#textos-principais > h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 12px;
+
+    display: block;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+section > div.conteudo > div#textos-principais > h2 {
+    color: var(--cor1);
+    font-family: var(--fonte-titulo);
+    font-size: 2.1em;
+    line-height: 35px;
+    
+
+    margin-top: 24px;
+    margin-left: 27px;
+}
+
+section > div.conteudo > div#textos-principais > p.paragrafo {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px; 
+    
+    margin-left: 30px;
+    margin-top: 24px;
+}
+
+section > div.conteudo > div#textos-principais > h3 {
+    color: var(--cor2);
+    font-family: var(--fonte-titulo);
+    font-size: 1.9em;
+    
+    display: inline-block;
+    margin-left: 32px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+section > div.conteudo > div#textos-principais > h4 {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: line-through; 
+    
+    display: inline-block;
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 33px;
+}
+
+section > div.conteudo > button {
+    color: white;
+    background-color: var(--cor2);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+
+    width: 85%;
+    height: 47px;
+    margin: 15px 28px;
+    padding-bottom: 3px;  
+}
+
+
+.carrinho {
+    margin-right: 6px;
+    transform: translateY(3.5px);
+}
+
+}
+
+
+
+

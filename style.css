@@ -1,0 +1,142 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Paleta de cores
+
+#1C232B - azul marinho
+#3C8067 - verde
+#6C7289 - azul arroxeado
+#F2EBE3 - cream
+#FFFFFF - branco 
+
+*/
+
+/* Mobile */
+
+
+:root {
+    --cor1: #1C232B;
+    --cor2: #3C8067;
+    --cor3: #6C7289;
+    --cor4: #F2EBE3;
+    --cor5: #FFFFFF;
+
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Fraunces', sans-serif;
+
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+section#config-geral-pagina {
+    position: absolute;
+    width: 340px;
+    height: 610px;
+    top: 50%;
+    left: 50%;
+
+    background-color: var(--cor5);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden; /* tudo que estiver fora da borda é escondido */
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section > div#imagem {
+    display: block;
+    background: url(imagens/image-product-mobile.jpg) no-repeat;
+    height: 42%;
+    background-size: contain;
+}
+
+
+section > div.conteudo {
+    display: inline-block;
+    position: absolute; /* pro texto aparecer */
+}
+
+
+section > div.conteudo > div#textos-principais > h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    font-size: 12px;
+
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+section > div.conteudo > div#textos-principais > h2 {
+    color: var(--cor1);
+    font-family: var(--fonte-titulo);
+    font-size: 1.9em;
+    line-height: 30px;
+
+    margin-top: 13px;
+    margin-left: 25px;
+}
+
+section > div.conteudo > div#textos-principais > p.paragrafo  {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-right: 23px;
+}
+
+
+section > div.conteudo > div#textos-principais > h3 {
+    color: var(--cor2);
+    font-family: var(--fonte-titulo);
+    font-size: 1.9em;
+    
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+section > div.conteudo > div#textos-principais > h4 {
+    color: var(--cor3);
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: line-through; 
+    
+    display: inline-block;
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 26px;
+}
+
+section > div.conteudo > button {
+    color: white;
+    background-color: var(--cor2);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+
+    width: 85%;
+    height: 47px;
+    margin: 15px 25px;
+    padding-bottom: 3px;  
+}
+
+
+.carrinho {
+    margin-right: 6px;
+    transform: translateY(3.5px);
+}
