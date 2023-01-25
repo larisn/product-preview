@@ -38,8 +38,8 @@ body {
 
 section#config-geral-pagina {
     position: absolute;
-    width: 600px;
-    height: 453px;
+    width: 620px;
+    height: 467px;
     background-color: var(--cor5);
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -53,7 +53,7 @@ section > div#imagem {
     background: url(imagens/image-product-desktop.jpg) no-repeat;
     background-size: contain;
     height: 100%;
-    width: 50%;
+    width: 51%;
     float: left;
 }
 
